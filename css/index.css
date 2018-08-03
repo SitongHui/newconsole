@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.console {
+    width: 400px;
+    height: 600px;
+    border: 1px solid #7e7e7e;
+    margin: 20px auto;
+    padding-top: 20px;
+    background: #eee;
+    position: relative;
+}
+.console > .console-area {
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #7e7e7e;
+    position: absolute;
+    bottom: 0;
+    display: none;
+    overflow: auto;
+}
+.console > .console-area > p {
+    padding: 5px 10px;
+    border-bottom: 1px solid #cbcbcb;
+}
+.console > .console-area > .warn {
+    background: red;
+}
+.console > .console-area > .error {
+    background: yellow;
+}
+.console > .console-area > .info {
+    background: #65ccff;
+}
+.console > .console-area > .log {
+    background: white;
+}
+.console > .showbtn {
+    background: #1fb03d;
+    color: #ffffff;
+    font-size: 14px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 5px 8px;
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+    z-index: 5;
+}
